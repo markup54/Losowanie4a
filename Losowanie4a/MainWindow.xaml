@@ -1,0 +1,22 @@
+﻿<Window x:Class="Losowanie4a.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Losowanie4a"
+        mc:Ignorable="d"
+        Title="Zgadnij liczbę" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel x:Name="widok1">
+            <TextBlock x:Name="tekst1" Foreground="Blue">Podaj zakres liczb</TextBlock>
+            <TextBlock x:Name="tekst2" Background="Aqua">Podaj pierwszą liczbę</TextBlock>
+            <TextBox x:Name="liczba1"/>
+            <TextBlock x:Name="tekst3">Podaj drugą liczbę</TextBlock>
+            <TextBox x:Name="liczba2"/>
+            <Button x:Name="przycisk1" HorizontalAlignment="Center" Click="wygeneruj_Click">Wygeneruj liczby</Button>
+        </StackPanel>
+        <StackPanel x:Name="widok2" Visibility="Hidden">
+            <TextBlock X:Name="tekst4" >Zgadnij wylosowaną liczbę</TextBlock>
+        </StackPanel>
+    </StackPanel>
+</Window>
